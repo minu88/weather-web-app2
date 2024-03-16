@@ -1,0 +1,27 @@
+.css-b62m3t-container {
+    width: 450px !important;
+    margin: 0px auto;
+    background-color: transparent !important;
+}
+
+.css-13cymwt-control {
+    /* background-color: lightgrey !important; */
+    background-color: #8f9baaab !important;
+}
+
+.css-t3ipsp-control {
+    border-color: lightgray !important;
+    box-shadow: none !important;
+    /* background-color: lightgrey !important; */
+    background-color: #8f9baaab !important;
+}
+
+.css-1nmdiq5-menu {
+    background-color: #8f9baaab !important;
+}
+
+.css-1jqq78o-placeholder,
+.css-1dimb5e-singleValue,
+.css-1nmdiq5-menu {
+    color: white !important;
+}

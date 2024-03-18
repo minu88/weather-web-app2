@@ -1,12 +1,18 @@
-import { useState } from "react";
 import { AsyncPaginate } from "react-select-async-paginate";
 import { geoApiOptions, GEO_API_URL } from "../../Api";
 import './Search.css';
+import { useNavigate } from "react-router-dom";
 
-const Search = ({onSearchChange}) => {
+const Search = () => {
+
+	const navigate = useNavigate();
+
 	// called in AsyncPaginate Search component for passing selected input
 	function handleOnChange(searchData) {
-		onSearchChange(searchData);
+		const {value, label} = searchData;
+		const [latitude, longitude] = value.split('|');
+		navigate(`/weather/${encodeURI(label)}/${encodeURI(latitude)}/${encodeURI(longitude)}`);
+		
 	}
 	
 	// called in AsyncPaginate Search component for loading options when typed.. we have to return options we fetch from https://rapidapi.com/wirefreethought/api/geodb-cities/
@@ -19,7 +25,7 @@ const Search = ({onSearchChange}) => {
 				return {
 						options: result.data.map(city => {
 								return {
-										value: `${city.latitude} ${city.longitude}`,
+										value: `${city.latitude}|${city.longitude}`,
 										label: `${city.city}, ${city.country}`,
 								}
 						})

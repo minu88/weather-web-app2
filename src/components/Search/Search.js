@@ -42,8 +42,8 @@ const Search = ({onSearchChange}) => {
 			console.error(error);
 			return {options: [
 				{
-					value: ``,
-					label: `No Data`,
+					value: `No Data Found`,
+					label: `No Data Found`,
 				}
 			]}
 		}

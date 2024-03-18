@@ -12,11 +12,11 @@ function App() {
   function handleOnSearchChange(searchData) {
     console.log(searchData);
     const [lat, lon] = searchData.value.split(' ');
-    console.log(lat, lon);
+
     fetch(`${WEATHER_API_URL}/weather?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}&units=metric`)
     .then(async(response) => {
       const weatherData = await response.json();
-      console.log(weatherData);
+      // console.log(weatherData);
       setWeather({city: searchData.label, ...weatherData});
     })
     .catch( err => console.log(err));

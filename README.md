@@ -11,6 +11,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 Link -> https://rapidapi.com/wirefreethought/api/geodb-cities/
 
 ### `create account in Openweathermap to create API key to fetch the current weather of searched cities`
-Link -> https://rapidapi.com/wirefreethought/api/geodb-cities/
+Link -> https://openweathermap.org/current
 
 

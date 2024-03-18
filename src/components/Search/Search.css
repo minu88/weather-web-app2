@@ -1,27 +1,78 @@
 .css-b62m3t-container {
-    width: 450px !important;
-    margin: 0px auto;
-    background-color: transparent !important;
+	width: 250px !important;
+	margin: 0px auto;
+	background-color: transparent !important;
+	text-align: center;
 }
 
 .css-13cymwt-control {
-    /* background-color: lightgrey !important; */
-    background-color: #8f9baaab !important;
+	background-color: transparent !important;
 }
 
 .css-t3ipsp-control {
-    border-color: lightgray !important;
-    box-shadow: none !important;
-    /* background-color: lightgrey !important; */
-    background-color: #8f9baaab !important;
+	border-color: lightgray !important;
+	box-shadow: none !important;
+	background-color: transparent !important;
 }
 
 .css-1nmdiq5-menu {
-    background-color: #8f9baaab !important;
+	background-color: white !important;
+	color: grey !important;
 }
 
-.css-1jqq78o-placeholder,
-.css-1dimb5e-singleValue,
-.css-1nmdiq5-menu {
-    color: white !important;
+.css-1jqq78o-placeholder {
+	color: hsl(0deg 0.65% 70.68%) !important;
+}
+
+.search-header-content {
+	color: #43AEFC;
+	font-weight: bold;
+	border-bottom: 1px solid #E9E9E9;
+	padding: 0 0 15px 15px;
+}
+
+.search-container {
+	width: 300px;
+	background-color: white;
+	height: 200px;
+	border-radius: 5px;
+	padding-bottom: 10px;
+}
+
+.divider-line {
+	border: 0.5px solid #E9E9E9;
+	width: 250px;
+	margin: 20px auto;
+}
+
+.divider-text {
+	color: hsl(0, 0%, 70%);
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	background-color: white;
+	position: absolute;
+	top: -8px;
+	left: 120px;
+	text-align: center;
+	padding: 0 15px;
+}
+
+.divider-div {
+	position: relative;
+}
+
+.device-location-button {
+	background-color: #43AEFC;
+	color: white;
+	border: none;
+	width: 250px;
+	padding: 10px 2px;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+.device-location-div {
+	width: fit-content;
+	margin: 10px auto;
 }

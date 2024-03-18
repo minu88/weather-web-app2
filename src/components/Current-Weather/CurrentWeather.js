@@ -2,7 +2,7 @@ import './CurrentWeather.css';
 
 const CurrentWeather = ({data, changeShow}) => {
     // destructuring the data
-    const {city, weather, main:{humidity, temp, pressure, feels_like}, wind:{speed}} = data;
+    const {city, weather, main:{humidity, temp, feels_like}} = data;
     const {description, icon} = weather[0];
     return (
 			<div className='weather'>

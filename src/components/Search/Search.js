@@ -4,11 +4,8 @@ import { geoApiOptions, GEO_API_URL } from "../../Api";
 import './Search.css';
 
 const Search = ({onSearchChange}) => {
-	const [search, setSearch] = useState(null);
-
 	// called in AsyncPaginate Search component for passing selected input
 	function handleOnChange(searchData) {
-		setSearch(searchData);
 		onSearchChange(searchData);
 	}
 	
@@ -19,7 +16,6 @@ const Search = ({onSearchChange}) => {
 				const response = await fetch(`${GEO_API_URL}/cities?minPopulation=1000000&namePrefix=${inputValue}`, geoApiOptions);
 				const result = await response.json();
 				// console.log('result', result);
-				// console.log('search', search);
 				return {
 						options: result.data.map(city => {
 								return {
@@ -57,7 +53,6 @@ const Search = ({onSearchChange}) => {
 				<AsyncPaginate
 						placeholder='Enter City Name'
 						debounceTimeout={600}
-						value={search}
 						onChange={handleOnChange}
 						loadOptions={loadOptions}
 				/>

@@ -45,7 +45,7 @@ const Search = ({onSearchChange}) => {
 			return {options: [
 				{
 					value: ``,
-					label: `Invalid City Name`,
+					label: `No Data`,
 				}
 			]}
 		}

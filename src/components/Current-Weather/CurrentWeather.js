@@ -9,10 +9,8 @@ const CurrentWeather = ({data, changeShow}) => {
 			<div className='top'>
 				<img className='top-left-arrow' src='left-arrow.png' alt='left-arrow' onClick={() => changeShow()} />
 				<span className='top-text'>Weather App</span>					
-					{/* <img alt='weather' className='weather-icon' src={`https://openweathermap.org/img/wn/${icon}@2x.png`} /> */}
 			</div>
 			<div className='middle'>						
-				{/* <p className='temperature'>{Math.round(temp)} °C</p> */}
 				<img alt='weather' className='weather-icon' src={`https://openweathermap.org/img/wn/${icon}@2x.png`} />
 				<p className='temperature'>{Math.round(temp)}°C</p>
 				<p className='description'>{description}</p>

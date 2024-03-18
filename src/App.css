@@ -5,11 +5,3 @@
   justify-content: center;
   align-items: center;
 }
-
-
-@media screen and (max-width: 1180px) {
-  .weather-forecast {
-    flex-direction: column;
-    gap: 50px;
-  }
-}
